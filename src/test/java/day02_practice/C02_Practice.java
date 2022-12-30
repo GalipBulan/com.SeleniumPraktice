@@ -23,7 +23,7 @@ public class C02_Practice {
     }
     @AfterClass
     public static void tearDown(){
-        //9. Sayfayi kapatin
+        // Sayfayi kapatin
         driver.close();
     }
     @Test
