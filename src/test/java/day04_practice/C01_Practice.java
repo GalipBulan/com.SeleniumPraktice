@@ -9,13 +9,13 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 import utilities.TestBase;
 import static org.junit.Assert.*;
 public class C01_Practice extends TestBase {
-    //              ..Exercise2...
+    //        ...Exercise2...
     //  http://www.bestbuy.com 'a gidin,
     //  Sayfa basliginin "Best" icerdigini(contains) dogrulayin
     //  Ayrica Relative Locator kullanarak;
-    //      logoTest => BestBuy logosunun goruntulenip goruntulenmedigini dogrulayin
+    //  logoTest => BestBuy logosunun goruntulenip goruntulenmedigini dogrulayin
     //  Ayrica Relative Locator kullanarak;
-    //      mexicoLinkTest => Linkin goruntulenip goruntulenmedigini dogrulayin
+    //  mexicoLinkTest => Linkin goruntulenip goruntulenmedigini dogrulayin
     @Before
     public void beforeTest(){
         driver.get("http://www.bestbuy.com");
@@ -32,7 +32,7 @@ public class C01_Practice extends TestBase {
     @Test
     public void logoTest(){
         //  Ayrica Relative Locator kullanarak;
-        //      logoTest => BestBuy logosunun goruntulenip goruntulenmedigini dogrulayin
+        //  logoTest => BestBuy logosunun goruntulenip goruntulenmedigini dogrulayin
         WebElement helloHeading = driver.findElement(By.xpath("(//div[@class='heading'])[1]"));
         WebElement bestBuyLogo = driver.findElement(RelativeLocator.with(By.tagName("img")).above(helloHeading));
         assertTrue(bestBuyLogo.isDisplayed());
@@ -40,7 +40,7 @@ public class C01_Practice extends TestBase {
     @Test
     public void mexicoLinkTest(){
         //  Ayrica Relative Locator kullanarak;
-        //      mexicoLinkTest => Linkin goruntulenip goruntulenmedigini dogrulayin
+        //  mexicoLinkTest => Linkin goruntulenip goruntulenmedigini dogrulayin
         WebElement usFlag = driver.findElement(By.xpath("(//img[@alt='United States'])[1]"));
         WebElement mexicoFlag = driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(usFlag));
         boolean goruntuleniyorMu = mexicoFlag.isDisplayed();
