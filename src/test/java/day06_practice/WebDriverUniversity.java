@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import utilities.ReusableMethods;
 import utilities.TestBase;
 
-public class C01_Practice extends TestBase {
+public class WebDriverUniversity extends TestBase {
 
-    public class c01Practice extends TestBase {
+    public static class c01Practice extends TestBase {
         /*
         1. "http://webdriveruniversity.com/Actions" sayfasina gidin
         2. "Hover over Me First" kutusunun ustune gelin

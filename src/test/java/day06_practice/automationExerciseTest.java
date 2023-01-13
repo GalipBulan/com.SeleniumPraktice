@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C02_Practice {
+public class automationExerciseTest {
 
     // Gerekli setup islemlerini kuralim
     // https://www.automationexercise.com/ sayfasina gidelim
